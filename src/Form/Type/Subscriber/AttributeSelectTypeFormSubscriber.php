@@ -101,6 +101,10 @@ class AttributeSelectTypeFormSubscriber extends AbstractAttributeTypeFormSubscri
                 }
             }
 
+//            $configurationChoice = [
+//                'data-action' => 'click->filters-form-submit#submit'
+//            ];
+
             return array_diff_key($configurationChoice, $localesCode);
         };
     }
