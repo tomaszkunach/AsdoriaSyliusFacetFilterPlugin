@@ -7,10 +7,6 @@ asdoria_admin_facet_filter:
     redirect: update
     grid: asdoria_admin_facet_filter
     permission: true
-    vars:
-       update:
-         templates:
-            toolbar: "@AsdoriaSyliusFacetFilterPlugin/FacetFilter/Update/_toolbar.html.twig"
   type: sylius.resource
 
 

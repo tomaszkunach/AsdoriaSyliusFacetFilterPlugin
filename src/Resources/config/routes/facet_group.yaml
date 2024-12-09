@@ -7,16 +7,6 @@ asdoria_admin_facet_group:
     redirect: update
     grid: asdoria_admin_facet_group
     permission: true
-    vars:
-       update:
-         templates:
-           breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Update/_breadcrumb.html.twig"
-       index:
-         templates:
-           breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Index/_breadcrumb.html.twig"
-       create:
-         templates:
-           breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Create/_breadcrumb.html.twig"
   type: sylius.resource
 
 
@@ -29,8 +19,6 @@ asdoria_admin_facet_group_children_index:
         grid: asdoria_admin_facet_group_children
         vars:
           facetGroup: expr:notFoundOnNull(service('asdoria.repository.facet_group').find($facetGroupId))
-          templates:
-            breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Crud/Children/Index/_breadcrumb.html.twig"
           route:
             parameters:
               facetGroupId: $facetGroupId
@@ -61,8 +49,6 @@ asdoria_admin_facet_group_children_create:
           name: asdoria_admin_facet_group_children_create
           parameters:
             facetGroupId: $facetGroupId
-        templates:
-          breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Crud/Children/Create/_breadcrumb.html.twig"
 
 asdoria_admin_facet_group_children_update:
   path: /facet-groups/{facetGroupId}/children/{id}/edit
@@ -76,6 +62,4 @@ asdoria_admin_facet_group_children_update:
       vars:
         facetGroup: expr:notFoundOnNull(service('asdoria.repository.facet_group').find($facetGroupId))
         route: referer
-        templates:
-          breadcrumb: "@AsdoriaSyliusFacetFilterPlugin/FacetGroup/Crud/Children/Update/_breadcrumb.html.twig"
 
