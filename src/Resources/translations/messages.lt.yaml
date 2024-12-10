@@ -56,7 +56,7 @@ asdoria:
         product_option_select_multiple: Galimybė pasirinkti kelis
         product_option_select: Parinktis pasirinkite paprastą
         taxon_select_expanded: Taksonas išsiplėtė
-        taxon_select_group_by: Taksonų grupė pagal
+        taxon_select_group_by: Taksonus grupuoti pagal
         taxon_select_multiple: Taksonas pasirinkite kelis
         taxon_select: Taksonų pasirinkimas paprastas
         attribute_radio: Atributo radijo mygtukas
@@ -84,8 +84,8 @@ asdoria:
             field_type_product_option_select: Paprastas parinkčių parinkiklis
             field_type_product_option_select_multiple: Parinkčių parinkiklis Keli
             field_type_product_option_select_expanded: Parinkčių parinkiklis Keli išskleistas
-            field_type_product_option_radio: Daugia pasirinkimas
-            position: Padėtis
+            field_type_product_option_radio: Daugiafunkcis pasirinkimas
+            position: Pozicija
             code: Id
             title: Pavadinimas
             description: Aprašymas
@@ -96,9 +96,9 @@ asdoria:
         facet_type_taxon:
             taxon: Pasirinkite taksoną, kurį norite filtruoti
         facet_group:
-            position: Padėtis
+            position: Pozicija
             code: Id
-            label: Vardas
+            label: Etiketė
         facet_groups:
             translations: Vertimai
         facet_filter:
